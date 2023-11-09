@@ -1,0 +1,63 @@
+{
+  "name": "nextjs-template",
+  "description": "Next.js template with vanilla-extract, Storybook, and other tools",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": true,
+  "packageManager": "pnpm@8.10.2",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test:storybook": "test-storybook",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "lint": "run-p -c 'lint:*'",
+    "lint:eslint": "eslint .",
+    "lint:prettier": "prettier --check './*.config.js' 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint:tsc": "tsc",
+    "lint-fix": "run-s -c 'lint-fix:*'",
+    "lint-fix:eslint": "pnpm lint:eslint --fix",
+    "lint-fix:prettier": "prettier --write './*.config.js' 'src/**/*.{js,jsx,ts,tsx}'"
+  },
+  "imports": {
+    "#src/*": "./src/*"
+  },
+  "dependencies": {
+    "clsx": "^2.0.0",
+    "next": "^14.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^2.1.3",
+    "@shun-shobon/eslint-config-base": "^1.0.11",
+    "@shun-shobon/eslint-config-next": "^1.0.7",
+    "@shun-shobon/eslint-config-react": "^1.0.4",
+    "@storybook/addon-a11y": "^7.5.3",
+    "@storybook/addon-essentials": "^7.5.3",
+    "@storybook/addon-interactions": "^7.5.3",
+    "@storybook/addon-links": "^7.5.3",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.5.3",
+    "@storybook/react": "^7.5.3",
+    "@storybook/react-vite": "^7.5.3",
+    "@storybook/test-runner": "^0.14.0",
+    "@storybook/testing-library": "^0.2.2",
+    "@types/node": "^20.9.0",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@vanilla-extract/css": "^1.13.0",
+    "@vanilla-extract/next-plugin": "^2.3.1",
+    "@vanilla-extract/vite-plugin": "^3.9.0",
+    "axe-playwright": "^1.2.3",
+    "eslint": "^8.53.0",
+    "eslint-plugin-storybook": "^0.6.15",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.0.3",
+    "storybook": "^7.5.3",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0"
+  }
+}
