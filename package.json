@@ -2,7 +2,12 @@
   "name": "nextjs-template",
   "description": "Next.js template with vanilla-extract, Storybook, and other tools",
   "version": "0.1.0",
-  "license": "MIT",
+  "author": {
+    "name": "NISHIZAWA Shuntaro",
+    "email": "me@s2n.tech",
+    "url": "https://s2n.tech"
+  },
+  "license": "UNLICENSED",
   "private": true,
   "packageManager": "pnpm@8.10.2",
   "type": "module",
