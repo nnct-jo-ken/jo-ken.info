@@ -8,13 +8,13 @@
 
 ## Features
 
-- React + Next.js
+- Astro
 - TypeScript
 - vanilla-extract
 - ESLint
   - `@shun-shobon/eslint-config` による包括的な設定が含まれています。
 - Prettier
-- Storybook
+  - `@shun-shobon/prettier-config` による包括的な設定が含まれています。
 - GitHub Actions
 
 現在、多くの設定は @shun-shobon 製のパッケージによって提供していますが、今後独自の設定に移行する予定です。
@@ -22,7 +22,7 @@
 ## Requirements
 
 - Node.js
-  - バージョンはasdfによって`.tool-versions`で管理しています。Node.jsをインストールする際はasdfを使用するようにお願いします。
+  - バージョンは`.tool-versions`で管理しています。Node.jsをインストールする際はasdf/rtxを使用するようにお願いします。
 - pnpm
   - バージョンは`package.json`の`packageManager`という項目で管理しています。corepackを用いるとこの項目を参照して自動的にバージョンを切り替えてくれるため、corepackを使用することをおすすめします。
 
@@ -52,32 +52,18 @@ pnpm build
 pnpm start
 ```
 
-### Storybookの起動
-
-```shell
-pnpm storybook
-```
-
-### Storybookを使用したテスト
-
-コマンド実行前にStorybookを起動しておく必要があります。
-
-```shell
-pnpm test:storybook
-```
-
 ### リンタの実行
 
 ```shell
 pnpm lint
 ```
 
-`lint:<ツール名>`で各ツールを個別に実行することもできます。
+`lint:fix`で自動修正を行うこともできます。
 
-### リンタの自動修正
+### フォーマッタの実行
 
 ```shell
-pnpm lint-fix
+pnpm format
 ```
 
-`lint-fix:<ツール名>`で各ツールを個別に実行することもできます。
+`format:check`で自動修正無しの実行を行うこともできます。

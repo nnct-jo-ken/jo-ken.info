@@ -1,0 +1,69 @@
+name: Check
+on:
+  push:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup | Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup | Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .tool-versions
+
+      - name: Setup | pnpm
+        id: pnpm
+        run: |
+          corepack enable
+          echo "cache-dir=$(pnpm store path --silent)" >> $GITHUB_OUTPUT
+
+      - name: Setup | Cache
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.pnpm.outputs.cache-dir }}
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
+
+      - name: Setup | Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Run | Lint
+        run: pnpm lint:ci
+
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup | Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup | Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .tool-versions
+
+      - name: Setup | pnpm
+        id: pnpm
+        run: |
+          corepack enable
+          echo "cache-dir=$(pnpm store path --silent)" >> $GITHUB_OUTPUT
+
+      - name: Setup | Cache
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.pnpm.outputs.cache-dir }}
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
+
+      - name: Setup | Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Run | Format
+        run: pnpm format:ci

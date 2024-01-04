@@ -1,17 +1,5 @@
 node_modules/
 
-# Next.js関連
-/.next/
-/out/
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-.vercel
-*.tsbuildinfo
-
-# テストカバレッジ
-/coverage/
-
-# Storybook
-/storybook-static/
+# Astro関連
+/dist/
+/.astro/
