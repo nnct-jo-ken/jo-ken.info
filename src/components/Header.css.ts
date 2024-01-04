@@ -18,7 +18,7 @@ export const header = style({
 
 	paddingInline: "16px",
 
-	backgroundColor: color(vars.color.background, 0.95),
+	backgroundColor: color(vars.color.background, 0.75),
 	backdropFilter: "blur(10px)",
 });
 
