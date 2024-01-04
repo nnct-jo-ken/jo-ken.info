@@ -4,8 +4,6 @@
 		"allowJs": true,
 		"checkJs": true,
 
-		"exactOptionalPropertyTypes": false,
-
 		"baseUrl": ".",
 		"paths": {
 			"~/*": ["src/*"]
