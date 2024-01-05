@@ -8,4 +8,6 @@ globalStyle("html, body", {
 		'"Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif',
 	minHeight: "100dvh",
 	color: color(theme.color.text),
+	textAlign: "justify",
+	fontFeatureSettings: "'palt' 1",
 });

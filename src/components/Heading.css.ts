@@ -18,7 +18,6 @@ export const text = style({
 
 	"fontSize": "3rem",
 	"fontWeight": "bold",
-	"fontFeatureSettings": "'palt' 1",
 
 	"::before": {
 		content: "''",
