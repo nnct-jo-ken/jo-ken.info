@@ -12,7 +12,8 @@ export const footer = style({
 
 	width: "100%",
 
-	padding: "16px",
+	paddingBlock: "24px",
+	paddingInline: "16px",
 
 	borderTop: `1px solid ${color(theme.color.border)}`,
 });
