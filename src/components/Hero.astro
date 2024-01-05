@@ -1,0 +1,14 @@
+---
+import * as styles from "./Hero.css";
+import { Image } from "astro:assets";
+
+import hero from "~/assets/hero.jpg";
+---
+
+<section class={styles.hero}>
+	<Image src={hero} alt="" class={styles.image} />
+	<h1 class={styles.copy}>
+		<span class={styles.copyLine}>一人では作れないものが、</span>
+		<span class={styles.copyLine}>そこにはあった。</span>
+	</h1>
+</section>
