@@ -1,4 +1,5 @@
 ---
+import Activity from "~/components/Activity.astro";
 import Container from "~/components/Container.astro";
 import Heading from "~/components/Heading.astro";
 import Hero from "~/components/Hero.astro";
@@ -24,6 +25,13 @@ import Layout from "~/layouts/Layout.astro";
 				<Paragraph>
 					当部のメンバーは主に「電子情報工学科」と「情報エレクトロニクス系」に所属する学生で構成されており、将来ITエンジニアとしてのキャリアを目指しています。これらの学科で学んだ専門知識が、部活動のさまざまなプロジェクトに活かされています。
 				</Paragraph>
+			</section>
+			<section>
+				<Heading>
+					<Fragment slot="en">Activity</Fragment>
+					活動情報
+				</Heading>
+				<Activity />
 			</section>
 		</Container>
 	</main>
