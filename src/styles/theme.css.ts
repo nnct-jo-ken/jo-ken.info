@@ -59,7 +59,7 @@ export const theme = createGlobalTheme(":root", {
 		border: core.color.gray500,
 
 		primaryText: core.color.primary300,
-		primaryBackground: core.color.primary600,
+		primaryBackground: core.color.primary300,
 		primaryBackgroundText: core.color.white,
 
 		accentText: core.color.accent400,
@@ -69,6 +69,7 @@ export const theme = createGlobalTheme(":root", {
 	font: {
 		sansSerif:
 			'"Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif',
+		handwriting: '"Zen Kurenaido", sans-serif',
 		cursive: '"Monsieur La Doulaise", cursive',
 	},
 	size: {

@@ -43,6 +43,8 @@ export const copy = style({
 	"gap": "8px",
 
 	"color": color(theme.color.primaryBackgroundText),
+	"lineHeight": "1.2",
+	"fontFamily": theme.font.handwriting,
 	"fontSize": "5.5vh",
 	"fontFeatureSettings": "'vchw' 1",
 	"writingMode": "vertical-rl",
@@ -61,7 +63,13 @@ export const copy = style({
 });
 
 export const copyLine = style({
-	paddingInline: "8px",
+	"paddingInline": "8px",
 
-	backgroundColor: color(theme.color.primaryBackground),
+	"backgroundColor": color(theme.color.primaryBackground),
+
+	"@media": {
+		[queries.lg]: {
+			paddingBottom: "0.125em",
+		},
+	},
 });
