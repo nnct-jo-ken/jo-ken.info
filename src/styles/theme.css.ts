@@ -56,6 +56,7 @@ export const theme = createGlobalTheme(":root", {
 	color: {
 		background: core.color.white,
 		text: core.color.gray700,
+		border: core.color.gray500,
 
 		primaryText: core.color.primary300,
 		primaryBackground: core.color.primary600,
@@ -70,6 +71,7 @@ export const theme = createGlobalTheme(":root", {
 	},
 	size: {
 		header: "4rem",
+		prose: "80ch",
 	},
 	zIndex: {
 		header: "100",

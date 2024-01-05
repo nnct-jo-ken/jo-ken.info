@@ -1,10 +1,30 @@
 ---
+import Container from "~/components/Container.astro";
+import Heading from "~/components/Heading.astro";
 import Hero from "~/components/Hero.astro";
+import Paragraph from "~/components/Paragraph.astro";
 import Layout from "~/layouts/Layout.astro";
 ---
 
 <Layout>
 	<main>
 		<Hero />
+		<Container>
+			<section>
+				<Heading>
+					<Fragment slot="en">Introduction</Fragment>
+					情技とは？
+				</Heading>
+				<Paragraph>
+					情報技術研究部、通称「情技」または「情技研」として知られるこの部活動は、長野高専におけるITに特化した集まりです。私たちは「クリエイティブなものづくり」を心掛け、技術の研鑽と応用に励んでいます。
+				</Paragraph>
+				<Paragraph>
+					当部の主力活動は、全国高等専門学校プログラミングコンテスト（高専プロコン）への参加です。このコンテストでは、最新のプログラミング技術やアルゴリズムを駆使して、革新的なソフトウェアやシステムの開発に挑戦します。過去には、ARを用いたプログラミング教材を作成し、課題部門特別賞を獲得しました。高専プロコンへの参加以外にも、部員個々の自由開発プロジェクトや、LT会（ライトニングトーク会）を不定期で開催しています。
+				</Paragraph>
+				<Paragraph>
+					当部のメンバーは主に「電子情報工学科」と「情報エレクトロニクス系」に所属する学生で構成されており、将来ITエンジニアとしてのキャリアを目指しています。これらの学科で学んだ専門知識が、部活動のさまざまなプロジェクトに活かされています。
+				</Paragraph>
+			</section>
+		</Container>
 	</main>
 </Layout>

@@ -8,6 +8,7 @@ export const heading = style({
 	justifyContent: "center",
 
 	paddingBottom: "0.5rem",
+	marginBottom: "1rem",
 });
 
 export const text = style({
@@ -26,13 +27,13 @@ export const text = style({
 		left: "16px",
 		top: "50%",
 
-		width: "3px",
+		width: "4px",
 		height: "60%",
-		borderRadius: "1.5px",
+		borderRadius: "2px",
 
 		transform: "translateY(-50%) rotate(-20deg)",
 
-		backgroundColor: color(theme.color.text),
+		backgroundColor: color(theme.color.border),
 	},
 	"::after": {
 		content: "''",
@@ -41,13 +42,13 @@ export const text = style({
 		right: "16px",
 		top: "50%",
 
-		width: "3px",
+		width: "4px",
 		height: "60%",
-		borderRadius: "1.5px",
+		borderRadius: "2px",
 
 		transform: "translateY(-50%) rotate(20deg)",
 
-		backgroundColor: color(theme.color.text),
+		backgroundColor: color(theme.color.border),
 	},
 });
 
