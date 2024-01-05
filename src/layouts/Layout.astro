@@ -9,7 +9,12 @@ interface Props {
 	children: any;
 }
 
-const { title } = Astro.props;
+const { title: rawTitle } = Astro.props;
+
+const title = rawTitle ? `${rawTitle} | 情報技術研究部` : "情報技術研究部";
+const description =
+	"長野高専のIT系部活動、情報技術研究部の公式サイトです。部活動紹介や活動報告、お知らせなどを掲載しています。";
+const site = Astro.site;
 ---
 
 <!doctype html>
@@ -31,13 +36,22 @@ const { title } = Astro.props;
 		/>
 
 		{/* SEO */}
-		<title>
-			{title ?? "情報技術研究部"}
-		</title>
-		<meta
-			name="description"
-			content="長野高専のIT系部活動、情報技術研究部の公式サイトです。部活動紹介や活動報告、お知らせなどを掲載しています。"
-		/>
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<link rel="icon" href="/favicon.ico" sizes="any" />
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+		<link rel="sitemap" href="/sitemap-index.xml" type="application/xml" />
+
+		{/* OGP */}
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={site} />
+		<meta property="og:image" content={`${site}/og-image.jpg`} />
+		<meta property="og:type" content="website" />
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description" content={description} />
+		<meta property="twitter:image" content={`${site}/og-image.jpg`} />
 	</head>
 	<body>
 		<Header />
