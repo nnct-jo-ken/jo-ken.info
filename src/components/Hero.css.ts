@@ -1,7 +1,7 @@
 import { style } from "@vanilla-extract/css";
 
 import * as queries from "~/styles/media-queries.css";
-import { vars } from "~/styles/theme.css";
+import { theme } from "~/styles/theme.css";
 import { color } from "~/styles/utils.css";
 
 export const hero = style({
@@ -31,7 +31,7 @@ export const image = style({
 
 export const copy = style({
 	"position": "absolute",
-	"top": `calc(${vars.size.header} + 24px)`,
+	"top": `calc(${theme.size.header} + 24px)`,
 	"right": "24px",
 
 	"display": "flex",
@@ -39,7 +39,7 @@ export const copy = style({
 	"alignItems": "start",
 	"gap": "8px",
 
-	"color": color(vars.color.background),
+	"color": color(theme.color.primaryBackgroundText),
 	"fontSize": "5.5vh",
 	"fontFeatureSettings": "'vchw' 1",
 	"writingMode": "vertical-rl",
@@ -60,5 +60,5 @@ export const copy = style({
 export const copyLine = style({
 	paddingInline: "8px",
 
-	backgroundColor: color(vars.color.primary),
+	backgroundColor: color(theme.color.primaryBackground),
 });
