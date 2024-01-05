@@ -16,13 +16,16 @@ export const image = style({
 	"top": 0,
 	"left": 0,
 
-	"width": "calc(100% - 48px)",
-	"height": "calc(100% - 64px)",
+	"width": "calc(100% - 64px)",
+	"height": "calc(100% - 80px)",
 
 	"objectFit": "cover",
 
 	"@media": {
-		[queries.md]: {
+		[queries.lg]: {
+			width: "calc(100% - 128px)",
+			height: "calc(100% - 80px)",
+
 			inset: "unset",
 			right: 0,
 		},
@@ -45,7 +48,7 @@ export const copy = style({
 	"writingMode": "vertical-rl",
 
 	"@media": {
-		[queries.md]: {
+		[queries.lg]: {
 			inset: "unset",
 			left: "24px",
 			bottom: "24px",
