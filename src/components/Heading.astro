@@ -1,0 +1,21 @@
+---
+import * as styles from "./Heading.css";
+
+interface Props {
+	level?: 1 | 2 | 3 | 4 | 5 | 6;
+	children: any;
+}
+
+const { level = 2 } = Astro.props;
+
+const Tag = `h${level}` as const;
+---
+
+<Tag class={styles.heading}>
+	<span class={styles.text}>
+		<slot />
+		<span lang="en" aria-hidden="true" class={styles.en}>
+			<slot name="en" />
+		</span>
+	</span>
+</Tag>

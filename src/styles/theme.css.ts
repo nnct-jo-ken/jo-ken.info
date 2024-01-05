@@ -37,6 +37,18 @@ export const core = createGlobalTheme(":root", {
 		primary800: "4 86 136",
 		primary900: "10 72 112",
 		primary950: "6 45 75",
+
+		accent50: "253 242 249",
+		accent100: "251 232 244",
+		accent200: "249 209 234",
+		accent300: "246 171 216",
+		accent400: "242 140 199",
+		accent500: "230 78 161",
+		accent600: "213 45 129",
+		accent700: "184 30 103",
+		accent800: "152 28 85",
+		accent900: "127 28 73",
+		accent950: "78 9 41",
 	},
 });
 
@@ -48,11 +60,19 @@ export const theme = createGlobalTheme(":root", {
 		primaryText: core.color.primary300,
 		primaryBackground: core.color.primary600,
 		primaryBackgroundText: core.color.white,
+
+		accentText: core.color.accent400,
+		accentBackground: core.color.accent600,
+		accentBackgroundText: core.color.white,
+	},
+	font: {
+		cursive: "'Monsieur La Doulaise', cursive",
 	},
 	size: {
 		header: "4rem",
 	},
 	zIndex: {
 		header: "100",
+		back: "-1",
 	},
 });
