@@ -7,7 +7,12 @@ export const paragraph = style({
 	maxWidth: theme.size.prose,
 
 	marginInline: "auto",
-	marginBlock: "0.75em",
 
 	lineHeight: "1.75",
+
+	selectors: {
+		["& + &"]: {
+			marginTop: "0.75em",
+		},
+	},
 });
