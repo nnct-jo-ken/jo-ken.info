@@ -14,11 +14,12 @@ const { title: rawTitle } = Astro.props;
 const title = rawTitle ? `${rawTitle} | 情報技術研究部` : "情報技術研究部";
 const description =
 	"長野高専のIT系部活動、情報技術研究部の公式サイトです。部活動紹介や活動報告、お知らせなどを掲載しています。";
-const site = Astro.site;
+
+const origin = Astro.site?.origin ?? "https://jo-ken.info";
 ---
 
 <!doctype html>
-<html lang="ja">
+<html lang="ja" prefix="og: https://ogp.me/ns#">
 	<head>
 		<meta charset="utf8" />
 		<meta name="viewport" content="width=device-width" />
@@ -45,13 +46,13 @@ const site = Astro.site;
 		{/* OGP */}
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
-		<meta property="og:url" content={site} />
-		<meta property="og:image" content={`${site}og-image.jpg`} />
+		<meta
+			property="og:url"
+			content={new URL(Astro.url.pathname, origin).href}
+		/>
+		<meta property="og:image" content={`${origin}/og-image.jpg`} />
 		<meta property="og:type" content="website" />
 		<meta property="twitter:card" content="summary_large_image" />
-		<meta property="twitter:title" content={title} />
-		<meta property="twitter:description" content={description} />
-		<meta property="twitter:image" content={`${site}og-image.jpg`} />
 	</head>
 	<body>
 		<Header />
