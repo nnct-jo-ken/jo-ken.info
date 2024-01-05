@@ -67,7 +67,9 @@ export const theme = createGlobalTheme(":root", {
 		accentBackgroundText: core.color.white,
 	},
 	font: {
-		cursive: "'Monsieur La Doulaise', cursive",
+		sansSerif:
+			'"Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif',
+		cursive: '"Monsieur La Doulaise", cursive',
 	},
 	size: {
 		header: "4rem",
