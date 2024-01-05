@@ -1,3 +1,4 @@
+import partytown from "@astrojs/partytown";
 import sitemap from "@astrojs/sitemap";
 import { vanillaExtractPlugin } from "@vanilla-extract/vite-plugin";
 import { defineConfig } from "astro/config";
@@ -10,7 +11,16 @@ export default defineConfig({
 	build: {
 		format: "file",
 	},
-	integrations: [compress(), icon(), sitemap()],
+	integrations: [
+		compress(),
+		icon(),
+		sitemap(),
+		partytown({
+			config: {
+				forward: ["dataLayer.push"],
+			},
+		}),
+	],
 	vite: {
 		plugins: [vanillaExtractPlugin()],
 	},

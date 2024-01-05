@@ -2,6 +2,7 @@
 import "~/styles/global.css";
 
 import Footer from "~/components/Footer.astro";
+import GoogleAnalytics from "~/components/GoogleAnalytics.astro";
 import Header from "~/components/Header.astro";
 
 interface Props {
@@ -35,6 +36,9 @@ const origin = Astro.site?.origin ?? "https://jo-ken.info";
 			href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap&text=一人では作れないものが、そこにはあった。"
 			rel="stylesheet"
 		/>
+
+		{/* Google Analytics */}
+		<GoogleAnalytics />
 
 		{/* SEO */}
 		<title>{title}</title>
