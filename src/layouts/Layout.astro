@@ -1,6 +1,7 @@
 ---
 import "~/styles/global.css";
 
+import Background from "~/components/Background.astro";
 import Footer from "~/components/Footer.astro";
 import GoogleAnalytics from "~/components/GoogleAnalytics.astro";
 import Header from "~/components/Header.astro";
@@ -61,6 +62,7 @@ const origin = Astro.site?.origin ?? "https://jo-ken.info";
 		<meta property="twitter:card" content="summary_large_image" />
 	</head>
 	<body class={styles.body}>
+		<Background />
 		<Header />
 		<slot />
 		<Footer />
