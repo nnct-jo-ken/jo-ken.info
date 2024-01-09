@@ -1,0 +1,30 @@
+name: "Setup Node.js environment"
+description: "Set up the Node.js environment and install dependencies."
+
+runs:
+  using: "composite"
+  steps:
+    - name: Setup | Node.js
+      shell: bash
+      uses: actions/setup-node@v4
+      with:
+        node-version-file: .tool-versions
+
+    - name: Setup | pnpm
+      id: pnpm
+      shell: bash
+      run: |
+        corepack enable
+        echo "cache-dir=$(pnpm store path --silent)" >> $GITHUB_OUTPUT
+
+    - name: Setup | Cache
+      uses: actions/cache@v3
+      with:
+        path: ${{ steps.pnpm.outputs.cache-dir }}
+        key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+        restore-keys: |
+          ${{ runner.os }}-pnpm-
+
+    - name: Setup | Install
+      shell: bash
+      run: pnpm install --frozen-lockfile
