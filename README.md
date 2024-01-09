@@ -1,5 +1,7 @@
 # jo-ken.info
 
+![](./public/og-image.jpg)
+
 情報技術研究部の公式サイト
 
 ## About
