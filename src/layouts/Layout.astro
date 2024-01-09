@@ -5,6 +5,8 @@ import Footer from "~/components/Footer.astro";
 import GoogleAnalytics from "~/components/GoogleAnalytics.astro";
 import Header from "~/components/Header.astro";
 
+import * as styles from "./Layout.css";
+
 export interface Props {
 	title?: string;
 	children: unknown;
@@ -58,7 +60,7 @@ const origin = Astro.site?.origin ?? "https://jo-ken.info";
 		<meta property="og:type" content="website" />
 		<meta property="twitter:card" content="summary_large_image" />
 	</head>
-	<body>
+	<body class={styles.body}>
 		<Header />
 		<slot />
 		<Footer />

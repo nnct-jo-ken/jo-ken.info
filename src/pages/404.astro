@@ -1,0 +1,23 @@
+---
+import Container from "~/components/Container.astro";
+import Heading from "~/components/Heading.astro";
+import Main from "~/components/Main.astro";
+import Paragraph from "~/components/Paragraph.astro";
+import Layout from "~/layouts/Layout.astro";
+---
+
+<Layout>
+	<Main>
+		<Container>
+			<section>
+				<Heading level={1}>
+					<Fragment slot="en">404</Fragment>
+					Not Found
+				</Heading>
+				<Paragraph>
+					アクセスしようとしたページは削除、変更されたか、現在利用できない可能性があります。お手数をおかけしますが、上部のメニューよりおさがしいただきますようお願いいたします。
+				</Paragraph>
+			</section>
+		</Container>
+	</Main>
+</Layout>
