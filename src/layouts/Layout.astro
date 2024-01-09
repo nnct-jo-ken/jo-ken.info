@@ -5,9 +5,9 @@ import Footer from "~/components/Footer.astro";
 import GoogleAnalytics from "~/components/GoogleAnalytics.astro";
 import Header from "~/components/Header.astro";
 
-interface Props {
+export interface Props {
 	title?: string;
-	children: any;
+	children: unknown;
 }
 
 const { title: rawTitle } = Astro.props;

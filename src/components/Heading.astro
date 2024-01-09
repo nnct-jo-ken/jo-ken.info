@@ -1,9 +1,9 @@
 ---
 import * as styles from "./Heading.css";
 
-interface Props {
+export interface Props {
 	level?: 1 | 2 | 3 | 4 | 5 | 6;
-	children: any;
+	children: unknown;
 }
 
 const { level = 2 } = Astro.props;

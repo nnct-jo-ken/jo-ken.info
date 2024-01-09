@@ -1,18 +1,8 @@
 ---
-declare global {
-	// eslint-disable-next-line typescript/no-explicit-any, no-var, no-unused-vars
-	var dataLayer: any[];
-}
+const script = `window.dataLayer??=[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-QV65NLHX47")`;
 ---
 
 <script
 	type="text/partytown"
 	src={`https://www.googletagmanager.com/gtag/js?id=G-QV65NLHX47`}></script>
-<script type="text/partytown">
-	window.dataLayer ??= [];
-	function gtag() {
-		dataLayer.push(arguments);
-	}
-	gtag("js", new Date());
-	gtag("config", "G-QV65NLHX47");
-</script>
+<script type="text/partytown" set:html={script} />
