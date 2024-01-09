@@ -14,12 +14,14 @@
 		"lint:ci": "eslint --max-warnings 0 .",
 		"lint:fix": "eslint --fix .",
 		"start": "astro preview",
-		"sync": "astro sync"
+		"sync": "astro sync",
+		"type-check": "tsc --noEmit && astro check"
 	},
 	"dependencies": {
 		"astro": "^4.1.1"
 	},
 	"devDependencies": {
+		"@astrojs/check": "^0.4.1",
 		"@astrojs/partytown": "^2.0.3",
 		"@astrojs/sitemap": "^3.0.4",
 		"@shun-shobon/eslint-config": "0.6.1",
