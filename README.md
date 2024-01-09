@@ -4,7 +4,7 @@
 
 ## About
 
-情報技術研究部の公式サイト(になる予定)のリポジトリです。
+情報技術研究部の公式サイトのリポジトリです。
 
 ## Features
 
@@ -17,12 +17,10 @@
   - `@shun-shobon/prettier-config` による包括的な設定が含まれています。
 - GitHub Actions
 
-現在、多くの設定は @shun-shobon 製のパッケージによって提供していますが、今後独自の設定に移行する予定です。
-
 ## Requirements
 
 - Node.js
-  - バージョンは`.tool-versions`で管理しています。Node.jsをインストールする際はasdf/rtxを使用するようにお願いします。
+  - バージョンは`.nvmrc`で管理しています。Node.jsをインストールする際はnvmやasdfなどを用いてください。
 - pnpm
   - バージョンは`package.json`の`packageManager`という項目で管理しています。corepackを用いるとこの項目を参照して自動的にバージョンを切り替えてくれるため、corepackを使用することをおすすめします。
 
@@ -50,6 +48,12 @@ pnpm build
 
 ```shell
 pnpm start
+```
+
+### 型チェックの実行
+
+```shell
+pnpm type-check
 ```
 
 ### リンタの実行
