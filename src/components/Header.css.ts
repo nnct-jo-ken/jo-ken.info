@@ -20,6 +20,7 @@ export const header = style({
 
 	backgroundColor: color(theme.color.background, 0.75),
 	backdropFilter: "blur(10px)",
+	WebkitBackdropFilter: "blur(10px)",
 });
 
 export const brand = style({
