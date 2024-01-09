@@ -1,6 +1,6 @@
 import { style } from "@vanilla-extract/css";
 
-import { theme } from "~/styles/theme.css";
+import { core, theme } from "~/styles/theme.css";
 import { color } from "~/styles/utils.css";
 
 export const header = style({
@@ -21,6 +21,8 @@ export const header = style({
 	backgroundColor: color(theme.color.background, 0.75),
 	backdropFilter: "blur(10px)",
 	WebkitBackdropFilter: "blur(10px)",
+
+	boxShadow: `0 0 8px ${color(core.color.black, 0.2)}`,
 });
 
 export const brand = style({
