@@ -20,8 +20,8 @@ devDependencies:
     specifier: ^3.0.4
     version: 3.0.4
   '@shun-shobon/eslint-config':
-    specifier: 0.6.1
-    version: 0.6.1(eslint-plugin-import@2.29.1)(eslint@8.56.0)(typescript@5.3.3)
+    specifier: 0.6.2
+    version: 0.6.2(eslint-plugin-import@2.29.1)(eslint@8.56.0)(typescript@5.3.3)
   '@shun-shobon/prettier-config':
     specifier: ^0.2.4
     version: 0.2.4(prettier@3.1.1)
@@ -1462,8 +1462,8 @@ packages:
     requiresBuild: true
     optional: true
 
-  /@shun-shobon/eslint-config@0.6.1(eslint-plugin-import@2.29.1)(eslint@8.56.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-Kmv5m1Ycy4kUZ3IS0fHKRHC0duB3DDzEGYeZOWaBdFU2RJUuSFPZz7NQ0aI5go80dt5cNY8x6pjRYf6AIWTG0Q==}
+  /@shun-shobon/eslint-config@0.6.2(eslint-plugin-import@2.29.1)(eslint@8.56.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-2puW1xZShSs7vetKiNoU2QXZwzHit2LRNuCrsyL/75KEuOFwZfpJ2KfjQ29xuDGYW5JihFSL7B//N+P2wtT8cw==}
     peerDependencies:
       eslint: ^8.21.0
     dependencies:
@@ -1471,7 +1471,7 @@ packages:
       '@next/eslint-plugin-next': 14.0.4
       '@typescript-eslint/eslint-plugin': 6.18.1(@typescript-eslint/parser@6.18.1)(eslint@8.56.0)(typescript@5.3.3)
       '@typescript-eslint/parser': 6.18.1(eslint@8.56.0)(typescript@5.3.3)
-      astro-eslint-parser: 0.16.0
+      astro-eslint-parser: 0.16.1
       eslint: 8.56.0
       eslint-config-flat-gitignore: 0.1.2
       eslint-define-config: 2.1.0
@@ -2196,8 +2196,8 @@ packages:
       terser: 5.26.0
     dev: true
 
-  /astro-eslint-parser@0.16.0:
-    resolution: {integrity: sha512-k9ASvY8pa6qttM+fvNJCILxxjftfNg/ou5cjd25SVHsc7moplezGGM9fgMUyf24SRYt8ShO603oHRDn2KqwxMg==}
+  /astro-eslint-parser@0.16.1:
+    resolution: {integrity: sha512-fJBJ+ajmmr04gPfv3vTjJjMIQIZ/YYeJeIZ0chuwL5OqSDnZtUPfhaYk0niHrjlJQXYgJ8qLTtl+QLWDsy7giA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     dependencies:
       '@astrojs/compiler': 2.4.0
@@ -2205,6 +2205,7 @@ packages:
       '@typescript-eslint/types': 5.62.0
       astrojs-compiler-sync: 0.3.3(@astrojs/compiler@2.4.0)
       debug: 4.3.4
+      entities: 4.5.0
       eslint-visitor-keys: 3.4.3
       espree: 9.6.1
       semver: 7.5.4
@@ -3312,7 +3313,7 @@ packages:
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.56.0)
       '@jridgewell/sourcemap-codec': 1.4.15
       '@typescript-eslint/types': 5.62.0
-      astro-eslint-parser: 0.16.0
+      astro-eslint-parser: 0.16.1
       eslint: 8.56.0
       eslint-compat-utils: 0.1.2(eslint@8.56.0)
       postcss: 8.4.33
