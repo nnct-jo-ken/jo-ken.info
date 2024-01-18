@@ -20,8 +20,8 @@ devDependencies:
     specifier: ^3.0.4
     version: 3.0.4
   '@shun-shobon/eslint-config':
-    specifier: 0.6.4
-    version: 0.6.4(eslint-plugin-import@2.29.1)(eslint@8.56.0)(typescript@5.3.3)
+    specifier: 0.6.5
+    version: 0.6.5(eslint-plugin-import@2.29.1)(eslint@8.56.0)(typescript@5.3.3)
   '@shun-shobon/prettier-config':
     specifier: ^0.2.4
     version: 0.2.4(prettier@3.2.2)
@@ -1462,8 +1462,8 @@ packages:
     requiresBuild: true
     optional: true
 
-  /@shun-shobon/eslint-config@0.6.4(eslint-plugin-import@2.29.1)(eslint@8.56.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-QGOkpDHLGYj85jiut/Ji0koxLHLfMVlnkWH/B+rZEjIDJtUmLuGaiyGdH5Q8Qq8kyv9WB5xFDzQqTP2BFpPOUQ==}
+  /@shun-shobon/eslint-config@0.6.5(eslint-plugin-import@2.29.1)(eslint@8.56.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-LUg2LMNMsOuvmjc/60QzSO+imdBKVkMoWpPoPfZWIo2bKZpiisfjD+JkR6zz4/3sQhzvx/RF0mMR/zbElVJi6A==}
     peerDependencies:
       eslint: ^8.21.0
     dependencies:
@@ -1476,7 +1476,7 @@ packages:
       eslint-config-flat-gitignore: 0.1.2
       eslint-define-config: 2.1.0
       eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@6.19.0)(eslint-plugin-import@2.29.1)(eslint@8.56.0)
-      eslint-plugin-astro: 0.31.1(eslint@8.56.0)
+      eslint-plugin-astro: 0.31.3(eslint@8.56.0)
       eslint-plugin-i: 2.29.1(@typescript-eslint/parser@6.19.0)(eslint-import-resolver-typescript@3.6.1)(eslint@8.56.0)
       eslint-plugin-jsx-a11y: 6.8.0(eslint@8.56.0)
       eslint-plugin-n: 16.6.2(eslint@8.56.0)
@@ -3228,8 +3228,8 @@ packages:
       eslint: 8.56.0
     dev: true
 
-  /eslint-compat-utils@0.2.1(eslint@8.56.0):
-    resolution: {integrity: sha512-+0mhJhMeVaiMrgtltweI3sThf8g9VSZKVNSna6gdULUycp9HmcTvcYTw+b7YY+OUHAPXmRiJ9fvsDFnQq9i//A==}
+  /eslint-compat-utils@0.4.1(eslint@8.56.0):
+    resolution: {integrity: sha512-5N7ZaJG5pZxUeNNJfUchurLVrunD1xJvyg5kYOIVF8kg1f3ajTikmAu/5fZ9w100omNPOoMjngRszh/Q/uFGMg==}
     engines: {node: '>=12'}
     peerDependencies:
       eslint: '>=6.0.0'
@@ -3312,8 +3312,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-astro@0.31.1(eslint@8.56.0):
-    resolution: {integrity: sha512-I1wSIvLaYjpC1Om5sjGhuEJk0zazKpxZxsRnEoBfQw7BTM5nxWoKlS9ozHtJSaRvfSbmnGvQL8SKVz59f5skYA==}
+  /eslint-plugin-astro@0.31.3(eslint@8.56.0):
+    resolution: {integrity: sha512-dxNT4cusvLiWFT0ebTd7HP9GixZbua7QYARD1ilqhJEANCSJA7RIas57vnD1PHNDCdYyTit7JU4NDPLWkcG2HA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=7.0.0'
@@ -3323,7 +3323,7 @@ packages:
       '@typescript-eslint/types': 5.62.0
       astro-eslint-parser: 0.16.1
       eslint: 8.56.0
-      eslint-compat-utils: 0.2.1(eslint@8.56.0)
+      eslint-compat-utils: 0.4.1(eslint@8.56.0)
       postcss: 8.4.33
       postcss-selector-parser: 6.0.15
     transitivePeerDependencies:
