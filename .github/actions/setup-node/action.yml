@@ -17,7 +17,7 @@ runs:
         echo "cache-dir=$(pnpm store path --silent)" >> $GITHUB_OUTPUT
 
     - name: Setup | Cache
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: ${{ steps.pnpm.outputs.cache-dir }}
         key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
