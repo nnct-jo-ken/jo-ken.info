@@ -23,8 +23,8 @@ devDependencies:
     specifier: 0.6.9
     version: 0.6.9(eslint-plugin-import@2.29.1)(eslint@8.56.0)(typescript@5.3.3)
   '@shun-shobon/prettier-config':
-    specifier: ^0.3.0
-    version: 0.3.0(prettier@3.2.5)
+    specifier: ^0.3.1
+    version: 0.3.1(prettier@3.2.5)
   '@vanilla-extract/css':
     specifier: ^1.14.1
     version: 1.14.1
@@ -1116,8 +1116,8 @@ packages:
       - typescript
     dev: true
 
-  /@shun-shobon/prettier-config@0.3.0(prettier@3.2.5):
-    resolution: {integrity: sha512-8nbTqhh/ZUXCyt6ElwbxCAdWue6dlYnPc0f0QgoDsz2kG2q1LTU795AM02HxIF+JM9Xti6XAOINxZcuSdK/JPw==}
+  /@shun-shobon/prettier-config@0.3.1(prettier@3.2.5):
+    resolution: {integrity: sha512-LuVGEL15oCDg20DZj/Kk2GeV98cpfIWZM9NxEhWBpXHFJ+LJtqyfFvHl322CsJBmzFyMKHYGwLfj2n1nfnd6sQ==}
     peerDependencies:
       prettier: ^3.0.0
     dependencies:
