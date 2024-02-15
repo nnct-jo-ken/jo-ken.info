@@ -6,48 +6,48 @@ settings:
 
 dependencies:
   astro:
-    specifier: ^4.3.5
+    specifier: 4.3.5
     version: 4.3.5(typescript@5.3.3)
 
 devDependencies:
   '@astrojs/check':
-    specifier: ^0.5.2
+    specifier: 0.5.2
     version: 0.5.2(prettier@3.2.5)(typescript@5.3.3)
   '@astrojs/partytown':
-    specifier: ^2.0.4
+    specifier: 2.0.4
     version: 2.0.4
   '@astrojs/sitemap':
-    specifier: ^3.0.5
+    specifier: 3.0.5
     version: 3.0.5
   '@shun-shobon/eslint-config':
     specifier: 0.7.2
     version: 0.7.2(eslint-plugin-import@2.29.1)(eslint@8.56.0)(typescript@5.3.3)
   '@shun-shobon/prettier-config':
-    specifier: ^0.3.1
+    specifier: 0.3.1
     version: 0.3.1(prettier@3.2.5)
   '@vanilla-extract/css':
-    specifier: ^1.14.1
+    specifier: 1.14.1
     version: 1.14.1
   '@vanilla-extract/vite-plugin':
-    specifier: ^4.0.3
+    specifier: 4.0.3
     version: 4.0.3(vite@5.0.12)
   astro-compress:
-    specifier: ^2.2.10
+    specifier: 2.2.10
     version: 2.2.10
   astro-icon:
-    specifier: ^1.1.0
+    specifier: 1.1.0
     version: 1.1.0
   eslint:
-    specifier: ^8.56.0
+    specifier: 8.56.0
     version: 8.56.0
   prettier:
-    specifier: ^3.2.5
+    specifier: 3.2.5
     version: 3.2.5
   sharp:
-    specifier: ^0.33.2
+    specifier: 0.33.2
     version: 0.33.2
   typescript:
-    specifier: ^5.3.3
+    specifier: 5.3.3
     version: 5.3.3
 
 packages:
@@ -1186,7 +1186,7 @@ packages:
   /@types/cheerio@0.22.35:
     resolution: {integrity: sha512-yD57BchKRvTV+JD53UZ6PD8KWY5g5rvvMLRnZR3EQBCZXiDT/HR+pKpMzFGlWNhFrXlo7VPZXtKvIEwZkAWOIA==}
     dependencies:
-      '@types/node': 20.11.16
+      '@types/node': 20.11.17
     dev: true
 
   /@types/css-tree@2.3.4:
@@ -1243,12 +1243,6 @@ packages:
     resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
     dev: true
 
-  /@types/node@20.11.16:
-    resolution: {integrity: sha512-gKb0enTmRCzXSSUJDq6/sPcqrfCv2mkkG6Jt/clpn5eiCbKTY+SgZUxo+p8ZKMof5dCp9vHQUAB7wOUTod22wQ==}
-    dependencies:
-      undici-types: 5.26.5
-    dev: true
-
   /@types/node@20.11.17:
     resolution: {integrity: sha512-QmgQZGWu1Yw9TDyAP9ZzpFJKynYNeOvwMJmaxABfieQoVoiVOS6MN1WSpqpRcbeA5+RW82kraAVxCCJg+780Qw==}
     dependencies:
@@ -1262,7 +1256,7 @@ packages:
   /@types/sax@1.2.7:
     resolution: {integrity: sha512-rO73L89PJxeYM3s3pPPjiPgVVcymqU490g0YO5n5By0k2Erzj6tay/4lr1CHAAU4JyOWd1rpQ8bCf6cZfHU96A==}
     dependencies:
-      '@types/node': 20.11.16
+      '@types/node': 20.11.17
     dev: true
 
   /@types/semver@7.5.6:
@@ -1272,7 +1266,7 @@ packages:
   /@types/tar@6.1.10:
     resolution: {integrity: sha512-60ZO+W0tRKJ3ggdzJKp75xKVlNogKYMqGvr2bMH/+k3T0BagfYTnbmVDFMJB1BFttz6yRgP5MDGP27eh7brrqw==}
     dependencies:
-      '@types/node': 20.11.16
+      '@types/node': 20.11.17
       minipass: 4.2.8
     dev: true
 
@@ -1287,7 +1281,7 @@ packages:
     resolution: {integrity: sha512-oJoftv0LSuaDZE3Le4DbKX+KS9G36NzOeSap90UIK0yMA/NhKJhqlSGtNDORNRaIbQfzjXDrQa0ytJ6mNRGz/Q==}
     requiresBuild: true
     dependencies:
-      '@types/node': 20.11.16
+      '@types/node': 20.11.17
     dev: true
     optional: true
 
@@ -3214,7 +3208,7 @@ packages:
     resolution: {integrity: sha512-EzV94NYKoO09GLXGjXj9JIlXijVck4ONSr5wiCWDvhsvj5jxSrzTmRU/9C1DyB6uToszLs8aifA6NQ7lEQdvFw==}
     engines: {node: '>= 0.8'}
     dependencies:
-      '@types/node': 20.11.16
+      '@types/node': 20.11.17
       require-like: 0.1.2
     dev: true
 
