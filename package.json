@@ -21,7 +21,7 @@
 		"astro": "4.3.7"
 	},
 	"devDependencies": {
-		"@astrojs/check": "0.5.9",
+		"@astrojs/check": "0.6.0",
 		"@astrojs/partytown": "2.0.4",
 		"@astrojs/sitemap": "3.1.1",
 		"@shun-shobon/eslint-config": "0.7.2",
