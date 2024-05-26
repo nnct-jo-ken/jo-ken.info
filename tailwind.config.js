@@ -6,6 +6,14 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
+				serif: [
+					"Helvetica Neue",
+					"Arial",
+					"Hiragino Kaku Gothic ProN",
+					"Hiragino Sans",
+					"Meiryo",
+					"sans-serif",
+				],
 				handwriting: ["Zen Kurenaido", "sans-serif"],
 				cursive: ["Monsieur La Doulaise", "cursive"],
 			},
