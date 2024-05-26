@@ -1,6 +1,4 @@
 ---
-import * as styles from "./Heading.css";
-
 export interface Props {
 	level?: 1 | 2 | 3 | 4 | 5 | 6;
 	children: unknown;
@@ -11,10 +9,20 @@ const { level = 2 } = Astro.props;
 const Tag = `h${level}` as const;
 ---
 
-<Tag class={styles.heading}>
-	<span class={styles.text}>
+<Tag class="mb-4 flex justify-center pb-4">
+	<span
+		class:list={[
+			"relative px-8 text-5xl font-bold",
+			"before:absolute before:left-4 before:top-1/2 before:h-3/4 before:w-1 before:-translate-y-1/2 before:-rotate-12 before:rounded-sm before:bg-current before:content-['']",
+			"after:absolute after:right-4 after:top-1/2 after:h-3/4 after:w-1 after:-translate-y-1/2 after:rotate-12 after:rounded-sm after:bg-current after:content-['']",
+		]}
+	>
 		<slot />
-		<span lang="en" aria-hidden="true" class={styles.en}>
+		<span
+			lang="en"
+			aria-hidden="true"
+			class="absolute -bottom-5 right-0 -z-10 font-cursive text-5xl font-normal text-accent-400/50"
+		>
 			<slot name="en" />
 		</span>
 	</span>

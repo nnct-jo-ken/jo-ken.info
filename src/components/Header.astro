@@ -1,13 +1,13 @@
 ---
 import { Icon } from "astro-icon/components";
 
-import * as styles from "./Header.css";
-
 export type Props = Record<string, never>;
 ---
 
-<header class={styles.header}>
+<header
+	class="fixed left-0 top-0 z-20 flex h-16 w-full items-center justify-between bg-white bg-opacity-75 px-4 shadow-md backdrop-blur"
+>
 	<a href="/">
-		<Icon name="logo" aria-label="情技" class={styles.brand} />
+		<Icon name="logo" aria-label="情技" class="text-5xl" />
 	</a>
 </header>

@@ -1,8 +1,8 @@
 import partytown from "@astrojs/partytown";
 import sitemap from "@astrojs/sitemap";
-import { vanillaExtractPlugin } from "@vanilla-extract/vite-plugin";
+import tailwind from "@astrojs/tailwind";
+import compress from "@playform/compress";
 import { defineConfig } from "astro/config";
-import compress from "astro-compress";
 import icon from "astro-icon";
 
 // https://astro.build/config
@@ -12,6 +12,9 @@ export default defineConfig({
 		format: "file",
 	},
 	integrations: [
+		tailwind({
+			applyBaseStyles: false,
+		}),
 		compress(),
 		icon(),
 		sitemap(),
@@ -21,7 +24,4 @@ export default defineConfig({
 			},
 		}),
 	],
-	vite: {
-		plugins: [vanillaExtractPlugin()],
-	},
 });

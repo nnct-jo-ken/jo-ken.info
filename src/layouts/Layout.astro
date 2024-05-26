@@ -1,12 +1,10 @@
 ---
-import "~/styles/global.css";
+import "~/styles/taliwind.css";
 
 import Background from "~/components/Background.astro";
 import Footer from "~/components/Footer.astro";
 import GoogleAnalytics from "~/components/GoogleAnalytics.astro";
 import Header from "~/components/Header.astro";
-
-import * as styles from "./Layout.css";
 
 export interface Props {
 	title?: string;
@@ -61,7 +59,9 @@ const origin = Astro.site?.origin ?? "https://jo-ken.info";
 		<meta property="og:type" content="website" />
 		<meta property="twitter:card" content="summary_large_image" />
 	</head>
-	<body class={styles.body}>
+	<body
+		class="grid min-h-dvh grid-rows-[1fr_auto] text-justify font-serif text-gray-700 [font-feature-settings:'palt'_1]"
+	>
 		<Background />
 		<Header />
 		<slot />

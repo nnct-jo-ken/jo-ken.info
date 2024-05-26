@@ -3,22 +3,29 @@ import { Image } from "astro:assets";
 
 import hero from "~/assets/hero.jpg";
 
-import * as styles from "./Hero.css";
-
 export type Props = Record<string, never>;
 ---
 
-<section class={styles.hero}>
+<section class="relative h-svh w-full">
 	<Image
 		src={hero}
 		alt=""
-		class={styles.image}
+		class:list={[
+			"absolute left-0 top-0 h-[calc(100%-theme(spacing.20))] w-[calc(100%-theme(spacing.16))] object-cover",
+			"lg:left-auto lg:right-0 lg:w-[calc(100%-theme(spacing.32))]",
+		]}
 		widths={[512, 1024, 2048, 4096, hero.width]}
 		sizes="100vw"
 		loading="eager"
 	/>
-	<h1 class={styles.copy}>
-		<span class={styles.copyLine}>一人では作れないものが、</span>
-		<span class={styles.copyLine}>そこにはあった。</span>
+	<h1
+		class="absolute right-6 top-[calc(theme(spacing.16)+theme(spacing.6))] flex flex-col items-start gap-2 font-handwriting text-[5.5vh] leading-tight text-white [font-feature-settings:'vchw'_1] [writing-mode:vertical-rl] lg:bottom-6 lg:left-6 lg:top-auto lg:text-[clamp(theme(fontSize.4xl),6vw,theme(fontSize.8xl))] lg:[font-feature-settings:'palt'_1] lg:[writing-mode:unset]"
+	>
+		<span class="bg-primary-300 py-2 lg:px-4 lg:pb-2 lg:pt-0"
+			>一人では作れないものが、</span
+		>
+		<span class="bg-primary-300 py-2 lg:px-4 lg:pb-2 lg:pt-0"
+			>そこにはあった。</span
+		>
 	</h1>
 </section>
