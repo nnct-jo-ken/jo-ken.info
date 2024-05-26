@@ -1,8 +1,8 @@
 import partytown from "@astrojs/partytown";
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
+import compress from "@playform/compress";
 import { defineConfig } from "astro/config";
-import compress from "astro-compress";
 import icon from "astro-icon";
 
 // https://astro.build/config
