@@ -1,5 +1,6 @@
 import partytown from "@astrojs/partytown";
 import sitemap from "@astrojs/sitemap";
+import tailwind from "@astrojs/tailwind";
 import { vanillaExtractPlugin } from "@vanilla-extract/vite-plugin";
 import { defineConfig } from "astro/config";
 import compress from "astro-compress";
@@ -12,6 +13,7 @@ export default defineConfig({
 		format: "file",
 	},
 	integrations: [
+		tailwind(),
 		compress(),
 		icon(),
 		sitemap(),

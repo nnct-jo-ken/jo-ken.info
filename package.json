@@ -24,6 +24,7 @@
 		"@astrojs/check": "0.5.9",
 		"@astrojs/partytown": "2.0.4",
 		"@astrojs/sitemap": "3.1.1",
+		"@astrojs/tailwind": "5.1.0",
 		"@shun-shobon/eslint-config": "0.12.3",
 		"@shun-shobon/prettier-config": "0.4.2",
 		"@vanilla-extract/css": "1.14.2",
@@ -33,6 +34,7 @@
 		"eslint": "8.57.0",
 		"prettier": "3.2.5",
 		"sharp": "0.33.3",
+		"tailwindcss": "3.4.3",
 		"typescript": "5.4.3"
 	}
 }
