@@ -27,8 +27,6 @@
 		"@astrojs/tailwind": "5.1.0",
 		"@shun-shobon/eslint-config": "0.12.3",
 		"@shun-shobon/prettier-config": "0.4.2",
-		"@vanilla-extract/css": "1.14.2",
-		"@vanilla-extract/vite-plugin": "4.0.3",
 		"astro-compress": "2.2.14",
 		"astro-icon": "1.1.0",
 		"eslint": "8.57.0",

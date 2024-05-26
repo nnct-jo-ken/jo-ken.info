@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--color-primary-50: 240 249 255;
+		--color-primary-100: 223 241 255;
+		--color-primary-200: 184 228 255;
+		--color-primary-300: 108 203 255;
+		--color-primary-400: 51 185 253;
+		--color-primary-500: 9 160 238;
+		--color-primary-600: 0 127 204;
+		--color-primary-700: 0 101 165;
+		--color-primary-800: 4 86 136;
+		--color-primary-900: 10 72 112;
+		--color-primary-950: 6 45 75;
+
+		--color-accent-50: 253 242 249;
+		--color-accent-100: 251 232 244;
+		--color-accent-200: 249 209 234;
+		--color-accent-300: 246 171 216;
+		--color-accent-400: 242 140 199;
+		--color-accent-500: 230 78 161;
+		--color-accent-600: 213 45 129;
+		--color-accent-700: 184 30 103;
+		--color-accent-800: 152 28 85;
+		--color-accent-900: 127 28 73;
+		--color-accent-950: 78 9 41;
+	}
+}

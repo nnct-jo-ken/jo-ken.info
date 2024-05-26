@@ -13,15 +13,15 @@ const Tag = `h${level}` as const;
 	<span
 		class:list={[
 			"relative px-8 text-5xl font-bold",
-			"before:absolute before:left-4 before:top-1/2 before:h-3/4 before:w-1 before:-translate-y-1/2 before:-rotate-12 before:rounded-sm before:bg-gray-500 before:content-['']",
-			"after:absolute after:right-4 after:top-1/2 after:h-3/4 after:w-1 after:-translate-y-1/2 after:rotate-12 after:rounded-sm after:bg-gray-500 after:content-['']",
+			"before:absolute before:left-4 before:top-1/2 before:h-3/4 before:w-1 before:-translate-y-1/2 before:-rotate-12 before:rounded-sm before:bg-current before:content-['']",
+			"after:absolute after:right-4 after:top-1/2 after:h-3/4 after:w-1 after:-translate-y-1/2 after:rotate-12 after:rounded-sm after:bg-current after:content-['']",
 		]}
 	>
 		<slot />
 		<span
 			lang="en"
 			aria-hidden="true"
-			class="font-cursive absolute -bottom-5 right-0 -z-10 text-5xl font-normal text-[rgb(242_140_199/0.5)]"
+			class="font-cursive text-accent-400/50 absolute -bottom-5 right-0 -z-10 text-5xl font-normal"
 		>
 			<slot name="en" />
 		</span>
