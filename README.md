@@ -12,7 +12,7 @@
 
 - Astro
 - TypeScript
-- vanilla-extract
+- Tailwind CSS
 - ESLint
   - `@shun-shobon/eslint-config` による包括的な設定が含まれています。
 - Prettier
