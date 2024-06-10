@@ -18,7 +18,7 @@
 		"type-check": "tsc --noEmit && astro check"
 	},
 	"dependencies": {
-		"astro": "4.9.3"
+		"astro": "4.10.1"
 	},
 	"devDependencies": {
 		"@astrojs/check": "0.7.0",
