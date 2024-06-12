@@ -14,8 +14,8 @@ devDependencies:
     specifier: 0.7.0
     version: 0.7.0(prettier@3.3.1)(typescript@5.4.5)
   '@astrojs/partytown':
-    specifier: 2.1.0
-    version: 2.1.0
+    specifier: 2.1.1
+    version: 2.1.1
   '@astrojs/sitemap':
     specifier: 3.1.5
     version: 3.1.5
@@ -159,8 +159,8 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@astrojs/partytown@2.1.0:
-    resolution: {integrity: sha512-9fjvTx2hTQpirUh1HnZZtFQaBz2R5ixrrmU/Zam3VZ9CoR3frqtnqg/Dt/i5C3UAlwiN0i8VuKxPx5cHP8yY5A==}
+  /@astrojs/partytown@2.1.1:
+    resolution: {integrity: sha512-KvecQuGGgrDrdTjC5awmtoQXqJFinChfeizKBJyr7F5EGQPx62xq8SIWkcXamLr5xZyNw0lryKeLtIzbxRH/zw==}
     dependencies:
       '@builder.io/partytown': 0.10.2
       mrmime: 2.0.0
