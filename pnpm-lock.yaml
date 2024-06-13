@@ -29,8 +29,8 @@ devDependencies:
     specifier: 0.13.1
     version: 0.13.1(@typescript-eslint/parser@7.13.0)(eslint-plugin-import@2.29.1)(eslint@9.4.0)(typescript@5.4.5)
   '@shun-shobon/prettier-config':
-    specifier: 0.4.3
-    version: 0.4.3(prettier@3.3.2)
+    specifier: 0.4.4
+    version: 0.4.4(prettier@3.3.2)
   astro-icon:
     specifier: 1.1.0
     version: 1.1.0
@@ -919,7 +919,7 @@ packages:
       cheerio: 1.0.0-rc.12
       extract-zip: 2.0.1
       local-pkg: 0.4.3
-      pathe: 1.1.1
+      pathe: 1.1.2
       svgo: 3.0.3
       tar: 6.2.0
     transitivePeerDependencies:
@@ -1392,8 +1392,8 @@ packages:
       - typescript
     dev: true
 
-  /@shun-shobon/prettier-config@0.4.3(prettier@3.3.2):
-    resolution: {integrity: sha512-SZdExBMh2Fhmj1huz1H5OQy/k9tiaKh7hagTF6pxKpyo/WxyNAHhNpgiYQ5/WGlZvjuOSS/IkWxliiibg6m6MQ==}
+  /@shun-shobon/prettier-config@0.4.4(prettier@3.3.2):
+    resolution: {integrity: sha512-3ixJtwon4SRPbT8JYQu8J9mFay64o4JKm52Lkp7vvCjZhLeK2ujlrhIJ9QsS3zkLsiYQg78J23ECSJMC+gQLTA==}
     peerDependencies:
       prettier: ^3.0.0
     dependencies:
@@ -1402,7 +1402,7 @@ packages:
       prettier-plugin-astro: 0.14.0
       prettier-plugin-jsdoc: 1.3.0(prettier@3.3.2)
       prettier-plugin-pkg: 0.18.1(prettier@3.3.2)
-      prettier-plugin-tailwindcss: 0.6.1(prettier-plugin-astro@0.14.0)(prettier-plugin-jsdoc@1.3.0)(prettier@3.3.2)
+      prettier-plugin-tailwindcss: 0.6.2(prettier-plugin-astro@0.14.0)(prettier-plugin-jsdoc@1.3.0)(prettier@3.3.2)
     transitivePeerDependencies:
       - '@ianvs/prettier-plugin-sort-imports'
       - '@prettier/plugin-pug'
@@ -5465,10 +5465,6 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /pathe@1.1.1:
-    resolution: {integrity: sha512-d+RQGp0MAYTIaDBIMmOfMwz3E+LOZnxx1HZd5R18mmCZY0QBlK0LDZfPc8FW8Ed2DlvsuE6PRjroDY+wg4+j/Q==}
-    dev: true
-
   /pathe@1.1.2:
     resolution: {integrity: sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==}
     dev: true
@@ -5637,8 +5633,8 @@ packages:
       prettier: 3.3.2
     dev: true
 
-  /prettier-plugin-tailwindcss@0.6.1(prettier-plugin-astro@0.14.0)(prettier-plugin-jsdoc@1.3.0)(prettier@3.3.2):
-    resolution: {integrity: sha512-AnbeYZu0WGj+QgKciUgdMnRxrqcxltleZPgdwfA5104BHM3siBLONN/HLW1yS2HvzSNkzpQ/JAj+LN0jcJO+0w==}
+  /prettier-plugin-tailwindcss@0.6.2(prettier-plugin-astro@0.14.0)(prettier-plugin-jsdoc@1.3.0)(prettier@3.3.2):
+    resolution: {integrity: sha512-eFefm4cg+1c2B57+H274Qm//CTWBdtQN9ansl0YTP/8TC8x3bugCTQSS/e4FC5Ctl9djhTzsbcMrZ7x2/abIow==}
     engines: {node: '>=14.21.3'}
     peerDependencies:
       '@ianvs/prettier-plugin-sort-imports': '*'
