@@ -23,8 +23,8 @@ devDependencies:
     specifier: 5.1.0
     version: 5.1.0(astro@4.10.2)(tailwindcss@3.4.4)
   '@playform/compress':
-    specifier: 0.0.12
-    version: 0.0.12(typescript@5.4.5)
+    specifier: 0.0.13
+    version: 0.0.13(typescript@5.4.5)
   '@shun-shobon/eslint-config':
     specifier: 0.13.1
     version: 0.13.1(@typescript-eslint/parser@7.13.0)(eslint-plugin-import@2.29.1)(eslint@9.4.0)(typescript@5.4.5)
@@ -1200,10 +1200,10 @@ packages:
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
     dev: true
 
-  /@playform/compress@0.0.12(typescript@5.4.5):
-    resolution: {integrity: sha512-L9q4rxu4Gq7hhtMzhTtxyjilWnlxvD2bkir+uyg7E6DPh08fFebn2vqET9XQZL+KXebKFhKYybvhGhBbrChJxg==}
+  /@playform/compress@0.0.13(typescript@5.4.5):
+    resolution: {integrity: sha512-2tKnSr2yjMUkQZTBQxW27IWOmZnyN6RH1r0gZ/ESdSCPu6GfutgYs63/Av+qjMz1SwOFO6TjDGRiMbSUI46RHg==}
     dependencies:
-      '@playform/pipe': 0.0.5
+      '@playform/pipe': 0.0.6
       '@types/csso': 5.0.4
       '@types/html-minifier-terser': 7.0.2
       astro: 4.10.2(lightningcss@1.25.1)(terser@5.31.1)(typescript@5.4.5)
@@ -1215,8 +1215,6 @@ packages:
       svgo: 3.3.2
       terser: 5.31.1
     transitivePeerDependencies:
-      - '@playform/build'
-      - '@playform/document'
       - '@types/node'
       - less
       - sass
@@ -1226,19 +1224,11 @@ packages:
       - typescript
     dev: true
 
-  /@playform/pipe@0.0.5:
-    resolution: {integrity: sha512-lUQTs5duOtnBvpfFzoiIUuZt6148PcEYv3pESm7kTaVaFAb2shhYLdueYcy4Jr1F6gCFsCv6jUvAwDD1f8f5ZQ==}
-    peerDependencies:
-      '@playform/build': 0.0.9
-      '@playform/document': 0.0.7
-    peerDependenciesMeta:
-      '@playform/build':
-        optional: true
-      '@playform/document':
-        optional: true
+  /@playform/pipe@0.0.6:
+    resolution: {integrity: sha512-dsW6Dyq9yNLOSw0iV7iD0P13pqmKFk2YjlGzgJOM7Qnl05Vdv0beFz0MquOma7rCE+Kg4njCPNAQUDsSss8xZw==}
     dependencies:
-      '@types/node': 20.12.12
-      deepmerge-ts: 7.0.1
+      '@types/node': 20.14.2
+      deepmerge-ts: 7.0.3
       fast-glob: 3.3.2
     dev: true
 
@@ -1519,6 +1509,12 @@ packages:
 
   /@types/node@20.12.12:
     resolution: {integrity: sha512-eWLDGF/FOSPtAvEqeRAQ4C8LSA7M1I7i0ky1I8U7kD1J5ITyW3AsRhQrKVoWf5pFKZ2kILsEGJhsI9r93PYnOw==}
+    dependencies:
+      undici-types: 5.26.5
+    dev: true
+
+  /@types/node@20.14.2:
+    resolution: {integrity: sha512-xyu6WAMVwv6AKFLB+e/7ySZVr/0zLCzOa7rSpq6jNwpqOrUbcACDWC+53d4n2QHOnDou0fbIsg8wZu/sxrnI4Q==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -2683,8 +2679,8 @@ packages:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
     dev: true
 
-  /deepmerge-ts@7.0.1:
-    resolution: {integrity: sha512-Qbiitd155MxdVp/ww9M6eeRPPMiWOugA34ptYOBQzOcFlPYl6JcWZLho6WvLmPDuxHLyLymhIN3YxrBleqZX9g==}
+  /deepmerge-ts@7.0.3:
+    resolution: {integrity: sha512-dxFbFO2RSIhPNBPL/j8Nvdt6/vrkW9+uGf1NLah/QxBGAVbK9fj2fGTO+HwdHpPAyFAsyT9iEn/1SI9SUvespw==}
     engines: {node: '>=16.0.0'}
     dev: true
 
